@@ -1,0 +1,4 @@
+2024-05-20 20:01:11.758759+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DELETE [*]* FROM PEZ"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM PEZ"; expected "identifier"; SQL statement:
+DELETE * FROM PEZ [42001-224]

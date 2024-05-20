@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peces Disco</title>
+  <link rel="stylesheet" href="pecesdisco.css">
+</head>
+
+<body>
+<header>
+  <h1>Peces Disco</h1>
+  <nav>
+    <ul class="contenedor">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="peces.html">Peces</a></li>
+      <li><a href="peceras.html">Peceras</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      <li><a href="index.html">Log in / Registrarse</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div id="pecera1-info"></div>
+  <form id="pecera1-form" class="pecera-form" onsubmit="event.preventDefault(); agregarPez(1);">
+    <h2>Añadir Pez a Pecera</h2>
+    <label for="tipo-1">Tipo:</label>
+    <select id="tipo-1" name="tipo">
+      <option value="HECKEL">Heckel</option>
+      <option value="VERDE_DEL_PERÚ">Verde del Perú</option>
+      <option value="BLUE_DIAMOND">Blue Diamond</option>
+      <option value="PIGEON_BLOOD">Pigeon Blood</option>
+    </select>
+
+    <label for="color-1">Color:</label>
+    <select id="color-1" name="color">
+      <option value="RED">Red</option>
+      <option value="GREEN">Green</option>
+      <option value="BLUE">Blue</option>
+      <option value="YELLOW">Yellow</option>
+      <option value="ORANGE">Orange</option>
+      <option value="PURPLE">Purple</option>
+      <option value="PINK">Pink</option>
+      <option value="BROWN">Brown</option>
+      <option value="BLACK">Black</option>
+      <option value="WHITE">White</option>
+      <option value="GRAY">Gray</option>
+      <option value="CYAN">Cyan</option>
+      <option value="MAGENTA">Magenta</option>
+      <option value="LIME">Lime</option>
+      <option value="MAROON">Maroon</option>
+      <option value="NAVY">Navy</option>
+      <option value="OLIVE">Olive</option>
+      <option value="TEAL">Teal</option>
+      <option value="SILVER">Silver</option>
+      <option value="GOLD">Gold</option>
+      <option value="BEIGE">Beige</option>
+      <option value="SALMON">Salmon</option>
+      <option value="CHOCOLATE">Chocolate</option>
+      <option value="INDIGO">Indigo</option>
+      <option value="VIOLET">Violet</option>
+      <option value="TURQUOISE">Turquoise</option>
+    </select>
+
+    <label for="sexo-1">Sexo:</label>
+    <select id="sexo-1" name="sexo">
+      <option value="MACHO">Macho</option>
+      <option value="HEMBRA">Hembra</option>
+      <option value="INDETERMINADO">Indeterminado</option>
+    </select>
+
+    <label for="email-1">Correo Electrónico del Usuario:</label>
+    <input type="email" id="email-1" name="email" required>
+
+    <button type="submit">Añadir Pez</button>
+  </form>
+
+  <!-- Formulario para eliminar pez -->
+  <form id="eliminar-pez-form" class="pecera-form" onsubmit="event.preventDefault(); eliminarPez();">
+    <h2>Eliminar Pez</h2>
+    <label for="id-pez">ID del Pez:</label>
+    <input type="number" id="id-pez" name="id" required>
+
+    <button type="submit">Eliminar Pez</button>
+  </form>
+
+  <div id="info-pecera"></div>
+</main>
+
+<script src="peceras.js"></script>
+</body>
+</html>
